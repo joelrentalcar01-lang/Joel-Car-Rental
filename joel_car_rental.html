@@ -708,7 +708,7 @@ function checkAdminPwd() {
 
 function openAdmin() {
   // Load saved cars from localStorage or use defaults
-  const saved = localStorage.getItem("jcr_cars");
+  const saved = localStorage.getItem("jcr_cars" JSON.stringify (data));
   if(saved) {
     const parsed = JSON.parse(saved);
     parsed.forEach((c,i) => { if(cars[i]) Object.assign(cars[i], c); });
