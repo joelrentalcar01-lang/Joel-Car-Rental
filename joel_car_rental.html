@@ -1062,7 +1062,7 @@ const SHEET_ID = "1aF-iJ80Ko0-AF3JWoH_0py0lSxwShyc647H7FMiAJZ8";
 // Load blocked dates from Google Sheets on page load
 async function loadBlockedDatesFromSheets() {
   try {
-    const url = "https://docs.google.com/spreadsheets/d/1aF-iJ80Ko0-AF3JWoH_0py0lSxwShyc647H7FMiAJZ8/gviz/tq?tqx=out:json&sheet=Sheet1";
+    const url = "https://docs.google.com/spreadsheets/d/1aF-iJ80Ko0-AF3JWoH_0py0lSxwShyc647H7FMiAJZ8/gviz/tq?tqx=out:json&sheet=Car";
     const res = await fetch(url);
     const text = await res.text();
     const clean = text.replace("/*O_o*/\ngoogle.visualization.Query.setResponse(", "").replace(");", "");
